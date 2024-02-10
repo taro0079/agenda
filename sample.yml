@@ -1,0 +1,30 @@
+openapi: 3.1.0
+info:
+  title: test
+  version: 1.0.0
+paths:
+  /api/orders/search:
+    post:
+      title: test
+      summary: test
+      description: test
+      requestBody:
+        description: test
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - orderId
+                - orderName
+              properties:
+                orderId:
+                  type: string
+                  description: order id
+                  example: '1'
+                orderName:
+                  type: string
+                  description: order name
+                  example: '1'
+
+
